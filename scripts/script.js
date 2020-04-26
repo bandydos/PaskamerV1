@@ -259,11 +259,6 @@ function generateMaleSizes() {
         sizeCategory = sizeCategories[12];
     }
 
-    //Unlogical combo.
-    // else {
-    //     sizeCategory = "Something went wrong, are you sure this is right?";
-    // }
-
     //Bodytype influence.
     if (bodyType == "g") {
         sizeCategory = sizeCategory - 1;
@@ -305,49 +300,49 @@ btnGenerate.onclick = function () {
         if (person.gender = "m") {
             switch (maleSize) {
                 case 0:
-                    size = "XXS"
+                    size = "You should go for XXS."
                     break;
                 case 1:
-                    size = "XXS-XS"
+                    size = "You should go for XXS or XS."
                     break;
                 case 2:
-                    size = "XS"
+                    size = "You should go for XS."
                     break;
                 case 3:
-                    size = "XS-S"
+                    size = "You should go for XS or S."
                     break;
                 case 4:
-                    size = "S"
+                    size = "You should go for S."
                     break;
                 case 5:
-                    size = "S-M"
+                    size = "You should go for S or M."
                     break;
                 case 6:
-                    size = "M"
+                    size = "You should go for M."
                     break;
                 case 7:
-                    size = "M-L"
+                    size = "You should go for M or L."
                     break;
                 case 8:
-                    size = "L"
+                    size = "You should go for L."
                     break;
                 case 9:
-                    size = "L-XL"
+                    size = "You should go for L-XL."
                     break;
                 case 10:
-                    size = "XL"
+                    size = "You should go for XL."
                     break;
                 case 11:
-                    size = "XL-XXL"
+                    size = "You should go for XL or XXL."
                     break;
                 case 12:
-                    size = "XXL"
+                    size = "You should go for XXL."
                     break;
                 case 13:
-                    size = "TANK"
+                    size = "You are a tank, go for XXL!"
                     break;
                 default:
-                    size = "Something went wrong, are you sure this is right?";
+                    size = "Something went wrong, are you sure this is the right information?";
 
             }
         }
