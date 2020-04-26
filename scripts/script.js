@@ -30,9 +30,7 @@ class Person {
     return ['XXS', 'XXS or XS', 'XS', 'XS or S', 'S', 'S or M', 'M', 'M or L', 'L', 'L or XL', 'XL', 'XL or XXL', 'XXL'];
   }
 
-  get gender() {
-    return '';
-  }
+  gender = '';
 
   get weightCategories() {
     return [];
@@ -92,9 +90,7 @@ class Person {
 }
 
 class Male extends Person {
-  get gender() {
-    return 'm';
-  }
+  gender = 'm';
 
   get weightCategories() {
     return [0, 1, 2, 3, 4, 5, 6];
@@ -114,9 +110,7 @@ class Male extends Person {
 }
 
 class Female extends Person {
-  get gender() {
-    return 'm';
-  }
+  gender = 'm';
 
   get weightCategories() {
     return [0, 1, 2, 3, 4, 5, 6];
