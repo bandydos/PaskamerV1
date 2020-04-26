@@ -89,7 +89,7 @@ function getMale() {
     };
     //Check if data is correctly passed.
     if (gender != false && age != false &&
-        weight != false && height != false && 
+        weight != false && height != false &&
         bodyType != false && style != false) {
         return person; //Return person object.
     }
@@ -260,29 +260,29 @@ function generateMaleSizes() {
     }
 
     //Unlogical combo.
-    else {
-        sizeCategory = "Something went wrong, are you sure this is right?";
-    }
+    // else {
+    //     sizeCategory = "Something went wrong, are you sure this is right?";
+    // }
 
     //Bodytype influence.
-    if(bodyType == "g"){
+    if (bodyType == "g") {
         sizeCategory = sizeCategory - 1;
     }
-    else if(bodyType = "n"){
+    else if (bodyType = "n") {
         sizeCategory = sizeCategory;
     }
-    else if(bodyType = "p"){
+    else if (bodyType = "p") {
         sizeCategory = sizeCategory + 1;
     }
 
     //Style influence.
-    if(style == "l"){
+    if (style == "l") {
         sizeCategory = sizeCategory + 1;
     }
-    else if(style == "n"){
+    else if (style == "n") {
         sizeCategory = sizeCategory;
     }
-    else if(style == "s"){
+    else if (style == "s") {
         sizeCategory = sizeCategory - 1;
     }
     return sizeCategory;
@@ -303,50 +303,53 @@ btnGenerate.onclick = function () {
     var maleSize = generateMaleSizes();
     if (person != false) {
         if (person.gender = "m") {
-            switch(maleSize) {
+            switch (maleSize) {
                 case 0:
                     size = "XXS"
-                  break;
+                    break;
                 case 1:
                     size = "XXS-XS"
-                  break;
-                  case 2:
+                    break;
+                case 2:
                     size = "XS"
-                  break;
+                    break;
                 case 3:
                     size = "XS-S"
-                  break;
-                  case 4:
+                    break;
+                case 4:
                     size = "S"
-                  break;
+                    break;
                 case 5:
                     size = "S-M"
-                  break;
-                  case 6:
+                    break;
+                case 6:
                     size = "M"
-                  break;
+                    break;
                 case 7:
                     size = "M-L"
-                  break;
-                  case 8:
+                    break;
+                case 8:
                     size = "L"
-                  break;
+                    break;
                 case 9:
                     size = "L-XL"
-                  break;
-                  case 10:
+                    break;
+                case 10:
                     size = "XL"
-                  break;
+                    break;
                 case 11:
                     size = "XL-XXL"
-                  break;
-                  case 12:
+                    break;
+                case 12:
                     size = "XXL"
-                  break;
+                    break;
                 case 13:
                     size = "TANK"
-                  break;
-              } 
+                    break;
+                default:
+                    size = "Something went wrong, are you sure this is right?";
+
+            }
         }
         else if (person.gender = "f") {
             size = generateFemaleSizes();
