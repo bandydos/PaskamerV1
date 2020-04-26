@@ -110,7 +110,7 @@ class Male extends Person {
 }
 
 class Female extends Person {
-  gender = 'm';
+  gender = 'f';
 
   get weightCategories() {
     return [0, 1, 2, 3, 4, 5, 6];
